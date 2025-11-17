@@ -22,7 +22,7 @@ public class HistoireTP4 {
 //
 //		prof.parler("Je n'ai plus que " + prof.getArgent()
 //				+ " sous en poche. Je ne peux même pas m'offrir un kimono à 50 sous.");
-	
+
 //		
 //		TEST COMMERCANT
 //		Commercant marco = new Commercant("Marco", 20);
@@ -31,17 +31,23 @@ public class HistoireTP4 {
 //        marco.seFaireExtorquer();
 //        marco.recevoir(15);
 //        marco.boire();
-        //TEST YAKUZA
+		// TEST YAKUZA
 //        Commercant marco = new Commercant("Marco", 20);
 //        Yakuza yaku = new Yakuza("Yaku Le Noir", "whisky", 30, "Warsong");
 //
 //        yaku.direBonjour();
 //        yaku.extorquer(marco);
-        
-        Commercant marco = new Commercant("Marco", 20); // commerçant déjà créé
-        Ronin roro = new Ronin("Roro", "shochu", 60);
 
-        roro.direBonjour();
-        roro.donner(marco);
+//		TEST Ronin
+//        Commercant marco = new Commercant("Marco", 20); // commerçant déjà créé
+//        Ronin roro = new Ronin("Roro", "shochu", 60);
+//
+//        roro.direBonjour();
+//        roro.donner(marco);
+
+		// Test Honneur Réputationn et duel entre Ronin et les Yakuzas
+		Ronin roro = new Ronin("Roro", "shochu", 60);
+        Yakuza yaku = new Yakuza("Yaku Le Noir", "whisky", 45, "Warsong");
+        roro.provoquer(yaku);
 	}
 }

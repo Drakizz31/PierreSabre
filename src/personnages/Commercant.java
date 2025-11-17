@@ -6,15 +6,15 @@ public class Commercant extends Humain {
         super(nom, "thé", argent);
     }
 
-    public int seFaireExtorquer() {
-        int tout = this.argent;
-        this.argent = 0;
+	public int seFaireExtorquer() {
+        int vol = argent;
+        argent = 0;
         parler("J’ai tout perdu! Le monde est trop injuste...");
-        return tout;
+        return vol;
     }
 
-    public void recevoir(int argent) {
-        this.argent += argent;
-        parler(argent + " sous ! Je te remercie généreux donateur!");
+    public void recevoir(int montant) {
+        argent += montant;
+        parler(montant + " sous ! Je te remercie généreux donateur!");
     }
 }
