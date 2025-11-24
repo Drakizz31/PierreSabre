@@ -43,5 +43,11 @@ public class Yakuza extends Humain {
 	public void afficherDefaite(int argentPerdu) {
 		parler("J’ai perdu mon duel et mes " + argentPerdu + " sous, snif... J'ai déshonoré le clan de " + clan + ".");
 	}
+	@Override
+	public void direBonjour() {
+	    super.direBonjour(); 
+	    parler("Mon clan est celui de " + clan + ".");
+	}
+
 	
 }

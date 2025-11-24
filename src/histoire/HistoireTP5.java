@@ -13,13 +13,11 @@ public class HistoireTP5 {
         Yakuza yaku = new Yakuza("Yaku Le Noir", "whisky", 30, "Warsong");
         Ronin roro = new Ronin("Roro", "shochu", 60);
 
-        // Faire connaissance selon le scénario
         marco.faireConnaissanceAvec(roro);
         marco.faireConnaissanceAvec(yaku);
         marco.faireConnaissanceAvec(chonin);
         marco.faireConnaissanceAvec(kumi);
 
-        // Lister les connaissances
         marco.listerConnaissance();
         roro.listerConnaissance();
         yaku.listerConnaissance();
