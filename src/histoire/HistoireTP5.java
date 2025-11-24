@@ -66,10 +66,8 @@ public class HistoireTP5 {
     	Commercant chonin = new Commercant("Chonin", 50);
     	Yakuza yaku = new Yakuza("Yaku Le Noir", "whisky", 80, "Warsong");
     	GrandMere grandMere = new GrandMere("Grand-Mère", 10);
-
     	masako.ranconner(kumi);
     	masako.ranconner(marco);
-
     	grandMere.faireConnaissanceAvec(akimoto);
     	grandMere.faireConnaissanceAvec(yaku);
     	grandMere.faireConnaissanceAvec(masako);
