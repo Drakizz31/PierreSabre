@@ -74,7 +74,6 @@ public class HistoireTP5 {
     	grandMere.faireConnaissanceAvec(kumi);
     	grandMere.faireConnaissanceAvec(marco);
     	grandMere.faireConnaissanceAvec(chonin);
-
     	grandMere.ragoter();
 
 
