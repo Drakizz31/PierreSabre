@@ -5,10 +5,11 @@ import java.util.Random;
 public class Traitre extends Samourai {
 	private int niveauTraitrise;
 
-	public Traitre(String nom, String boissonFavorite, int argent, String seigneur) {
-		super(nom, boissonFavorite, argent, seigneur);
-		this.niveauTraitrise = 0;
+	public Traitre(String seigneur, String nom, String boissonFavorite, int argent) {
+	    super(seigneur, nom, boissonFavorite, argent);
+	    this.niveauTraitrise = 0;
 	}
+
 
 	public int getNiveauTraitrise() {
 		return niveauTraitrise;
@@ -16,9 +17,10 @@ public class Traitre extends Samourai {
 
 	@Override
 	public void direBonjour() {
-		super.direBonjour();
-		parler("Mon niveau de traîtrise est de " + niveauTraitrise + ".");
+	    super.direBonjour();
+	    parler("Mais je suis un traître et mon niveau de traîtrise est : " + niveauTraitrise + ". Chut !");
 	}
+
 
 	public void ranconner(Commercant commercant) {
 		if (niveauTraitrise >= 3) {
